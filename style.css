@@ -1,0 +1,54 @@
+body{
+	font-family: 'Barrio', cursive;
+	background-color: #ba68c8;
+}
+
+ul{
+	list-style: none;
+	color: white;
+}
+h1{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+canvas{
+	border-style: solid;
+	margin-left: 60px;
+	background-color:  #fce4ec;
+	border-radius: 10px;
+;
+}
+button{
+	width: 70px;
+	height: 70px;
+
+}
+#c1{
+	background-color: white;
+}
+#c2{
+	background-color: black;
+}
+#c3{
+	background-color: yellow;
+}
+#c4{
+	background-color: blue;
+}
+#c5{
+	background-color: pink;
+}
+#c6{
+	background-color: green;
+}
+#c7{
+	background-color: purple;
+}
+#outils{
+	margin-left: 250px;
+}
+.color-palette
+{
+    cursor: crosshair;
+}

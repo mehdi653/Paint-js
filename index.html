@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Paint</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.slim.js"
+	integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="
+	crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Barrio|Josefin+Sans" rel="stylesheet"> 
+	<script src="slate.class.js"></script>
+	<script src="pen.class.js"></script>
+	<script src="color.js"></script>
+</head>
+<body>
+	<h1>Paint</h1>
+	<canvas id="slate" width="1050" height="450" > 
+		Texte alternatif pour les navigateurs ne supportant pas Canvas.
+	</canvas>
+	<canvas id="color-palette" class="color-palette hide" width="256" height="256"></canvas>
+	<nav>
+		<ul>
+			<div id="outils">
+				<li>Outils:       <p> <button id="clear"><i class="fa fa-eraser fa-4x" aria-hidden="true" style="color:black"></i></button></p></li>
+				<button class="clearN0"><i class="fa fa-eraser fa-4x" aria-hidden="true" style="color:black"></i></button></li><br />
+				<p>Couleur: 
+					<button id="c1" class="colors" data-color="white"></button>
+					<button id="c2" class="colors" data-color="black"></button>
+					<button id="c3" class="colors" data-color="yellow"></button>
+					<button id="c4" class="colors" data-color="blue"></button>
+					<button id="c5" class="colors" data-color="pink"></button>
+					<button id="c6" class="colors" data-color="green"></button>
+					<button id="c7" class="colors" data-color="purple"></button>
+				</p><br />
+				<li>Taille: <button class="s1" data-size="5"   > <i class="fa fa-pencil" aria-hidden="true" style="color:black"></i></button>  <button class="s1" data-size="20"><i class="fa fa-pencil fa-2x" aria-hidden="true" style="color:black">   </i></button> <button class="s1" data-size="40"> <i class="fa fa-pencil fa-3x" aria-hidden="true" style="color:black"> </i> </button>     
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<form name ="show">
+        <input type="text" name="mouseXField" value="0" size="6">Position souris X<br>
+        <input type="text" name="mouseYField" value="0" size="6"> Position souris Y<br>
+</form>
+
+</body>
+<script src="main.js"></script>
+</html>
